@@ -18,29 +18,58 @@
     }
 
     // Regular
-
+    console.log('normal');
     // Interpolated
+    console.log('HEllow I am a %s string!', 'this goes in');
 
     // Styled
-
+    console.log('%c I am some great text', 'font-size: 50px; background: red');
     // warning!
-
+    console.warn('OH NOO');
     // Error :|
+    console.error('ERROR!');
 
     // Info
+    console.info('fun fact');
 
     // Testing
+    console.assert(1 === 1, 'true');  //only fire if its wrong
 
     // clearing
+    console.clear();
 
     // Viewing DOM Elements
+    console.dir('an element');
 
+    console.clear();
     // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`This is ${dong.name}`);
+      console.log(`This is ${dong.name}`);
+      console.log(`This is ${dong.name}`);
+      console.groupEnd(`${dog.name}`);
+    })
 
     // counting
-
+    console.count('count how many time you use this string');
+    console.count('a');
+    console.count('a');
+    console.count('a');
+    console.count('a');
+    console.count('a');
     // timing
+    console.time('fetching data');
+    // fetch('data file')
+    //   .then(data => data.json())
+    //   .then(data => {
+    //     console.timeEnd('fetching data');
+    //     console.log(data);
+    //   });
 
+
+      console.table('an array of objects');
   </script>
 </body>
 </html>
+
